@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Diagnostics;
 using System.Text;
 using Microsoft.WindowsAzure.Storage.Table;
 using log4net.Core;
@@ -68,6 +69,6 @@ namespace log4net.Appender
 
         public string MethodName { get; set; }
 
-        public StackFrameItem[] StackFrames { get; set; }
+        public StackFrame[] StackFrames { get; set; }
     }
 }
