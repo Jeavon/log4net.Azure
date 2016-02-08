@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+		<id>log4net.Appender.Azure.Umbraco</id>
+		<version>0.0.0.0</version>
+		<title>log4net.Appender.Azure.Umbraco</title>
+		<authors>stemarie,jeavon</authors>
+		<projectUrl>https://github.com/Jeavon/log4net.Azure</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Umbraco specific fork of log4net Appenders for Azure Table and Blob support</description>
+		<copyright>(c) 2012-2015 Karell Ste-Marie</copyright>
+		<dependencies>
+			<dependency id="UmbracoCms.Core" version="7.3.0" />
+			<dependency id="WindowsAzure.Storage" version="6.1.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\release\log4net.Appender.Azure.dll" target="lib\net45" />
+	</files>
+</package>
