@@ -32,3 +32,14 @@ before_test:
 
 artifacts:
 - path: artifacts\*.nupkg
+
+deploy:
+     # MyGet Deployment for builds & releases
+  - provider: NuGet
+    server: https://www.myget.org/F/log4net-azure-umbraco/
+    symbol_server: https://nuget.symbolsource.org/MyGet/log4net-azure-umbraco
+    api_key:
+      secure: SASQGWG/4zNns7bwSSsJ5RPvKcKfJsBeEPuw69wsVPA3PO739QmzVtc5VwQwgvbr
+    artifact: /.*\.nupkg/
+    on:
+      branch: UmbracoVersion
