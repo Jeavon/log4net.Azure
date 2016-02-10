@@ -16,7 +16,7 @@ namespace log4net.Azure.Tests
             _appender = new AzureBlobAppender()
                 {
                     ConnectionString = "UseDevelopmentStorage=true",
-                    ContainerName = "testLoggingBlob",
+                    ContainerName = "test-logging-blob",
                     DirectoryName = "testLogging"
                 };
             _appender.ActivateOptions();
