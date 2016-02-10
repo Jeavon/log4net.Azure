@@ -179,7 +179,6 @@ log4net.Azure.TestUmbracoSite/App_Data/umbraco.config
 log4net.Azure.TestUmbracoSite/App_Data/preview/*.config
 log4net.Azure.TestUmbracoSite/App_Data/TEMP/ClientDependency/
 log4net.Azure.TestUmbracoSite/App_Data/TEMP/PluginCache/*
-log4net.Azure.TestUmbracoSite/App_Data/TEMP/SEOChecker/
 log4net.Azure.TestUmbracoSite/App_Data/TEMP/ExamineIndexes/
 log4net.Azure.TestUmbracoSite/App_Data/TEMP/DistCache/
 log4net.Azure.TestUmbracoSite/App_Data/TEMP/SEOChecker/
@@ -189,6 +188,7 @@ log4net.Azure.TestUmbracoSite/App_Data/Logs/*
 log4net.Azure.TestUmbracoSite/App_Data/umbraco.licensing.log.txt
 log4net.Azure.TestUmbracoSite/App_Data/NuGetBackup/*
 log4net.Azure.TestUmbracoSite/App_Data/*.udt
+*/App_Data/NuGetBackup/
 
 # =========================
 # ImageProcessor DiskCache 

@@ -10,7 +10,7 @@
 		<description>Umbraco specific fork of log4net Appenders for Azure Table and Blob support</description>
 		<copyright>(c) 2012-2015 Karell Ste-Marie</copyright>
 		<dependencies>
-			<dependency id="UmbracoCms.Core" version="7.3.0" />
+			<dependency id="UmbracoCms.Core" version="7.3.7" />
 			<dependency id="WindowsAzure.Storage" version="6.2.0" />
 			<dependency id="Microsoft.WindowsAzure.ConfigurationManager" version="3.2.1" />
 			<!--<dependency id="Newtonsoft.Json" version="7.0.1" />-->
