@@ -5,6 +5,7 @@ os: Visual Studio 2015
 branches:
   only:
   - UmbracoVersion
+  - UmbracoVersion-Experimental
 
 assembly_info:
   patch: true
