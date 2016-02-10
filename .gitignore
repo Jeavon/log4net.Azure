@@ -170,7 +170,7 @@ pip-log.txt
 # =========================
 # Umbraco media
 # =========================
-log4net.Azure.TestUmbracoSite/media/*
+#log4net.Azure.TestUmbracoSite/media/*
 
 # =========================
 # Umbraco
