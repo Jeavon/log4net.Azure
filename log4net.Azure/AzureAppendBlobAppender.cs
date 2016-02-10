@@ -86,7 +86,8 @@ namespace log4net.Appender
         protected override void SendBuffer(LoggingEvent[] events)
         {
             CloudAppendBlob appendBlob = _cloudBlobContainer.GetAppendBlobReference(Filename(_directoryName));
-            if (!appendBlob.Exists()) appendBlob.CreateOrReplace();
+            if (!appendBlob.Exists())
+                appendBlob.CreateOrReplace();
             else _lineFeed = Environment.NewLine;
 
             Parallel.ForEach(events, ProcessEvent);
