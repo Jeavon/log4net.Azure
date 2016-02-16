@@ -6,6 +6,7 @@ using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Configuration;
 using System.Linq;
+using System.Web;
 using Microsoft.Azure;
 
 namespace log4net.Appender
@@ -45,7 +46,7 @@ namespace log4net.Appender
 
         private string _tableName;
 
-	    public string TableName
+        public string TableName
         {
             get
             {
@@ -61,7 +62,7 @@ namespace log4net.Appender
 
         public bool PropAsColumn { get; set; }
 
-	    private PartitionKeyTypeEnum _partitionKeyType = PartitionKeyTypeEnum.LoggerName;
+        private PartitionKeyTypeEnum _partitionKeyType = PartitionKeyTypeEnum.LoggerName;
         public PartitionKeyTypeEnum PartitionKeyType
         {
             get { return _partitionKeyType; }
@@ -107,5 +108,25 @@ namespace log4net.Appender
             _table = _client.GetTableReference(TableName);
             _table.CreateIfNotExists();
         }
-    }
+
+		protected override void Append(LoggingEvent loggingEvent)
+		{
+			try
+			{
+				if (HttpContext.Current != null && HttpContext.Current.Handler != null)
+				{
+					loggingEvent.Properties["url"] = HttpContext.Current.Request.Url.AbsoluteUri;
+				}
+				else
+				{
+					loggingEvent.Properties["url"] = null;
+				}
+			}
+			catch
+			{
+				loggingEvent.Properties["url"] = null;
+			}
+			base.Append(loggingEvent);
+		}
+	}
 }
