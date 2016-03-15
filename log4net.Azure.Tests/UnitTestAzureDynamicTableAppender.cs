@@ -1,5 +1,5 @@
 using System;
-using log4net.Appender;
+using log4net.Appender.Umbraco;
 using log4net.Core;
 using log4net.Util;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

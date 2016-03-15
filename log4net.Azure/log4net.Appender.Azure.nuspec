@@ -17,6 +17,6 @@
 		</dependencies>
 	</metadata>
 	<files>
-		<file src="bin\release\log4net.Appender.Azure.dll" target="lib\net45" />
+		<file src="bin\release\log4net.Appender.Azure.Umbraco.dll" target="lib\net45" />
 	</files>
 </package>

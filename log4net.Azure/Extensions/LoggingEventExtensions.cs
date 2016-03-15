@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Xml.Linq;
 using log4net.Core;
 
-namespace log4net.Appender.Extensions
+namespace log4net.Appender.Umbraco.Extensions
 {
     internal static class LoggingEventExtensions
     {

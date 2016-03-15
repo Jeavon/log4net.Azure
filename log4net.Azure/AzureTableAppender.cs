@@ -1,5 +1,3 @@
-using log4net.Appender.Extensions;
-using log4net.Appender.Language;
 using log4net.Core;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
@@ -7,9 +5,11 @@ using System;
 using System.Configuration;
 using System.Linq;
 using System.Web;
+using log4net.Appender.Umbraco.Extensions;
+using log4net.Appender.Umbraco.Language;
 using Microsoft.Azure;
 
-namespace log4net.Appender
+namespace log4net.Appender.Umbraco
 {
     public class AzureTableAppender : BufferingAppenderSkeleton
     {
