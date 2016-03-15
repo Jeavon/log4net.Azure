@@ -153,13 +153,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AzureAppendBlobAppender.cs" />
     <Compile Include="AzureDynamicLoggingEventEntity.cs" />
     <Compile Include="AzureLayoutLoggingEventEntity.cs" />
     <Compile Include="AzureLoggingEventEntity.cs" />
-    <Compile Include="AzureQueueAppender.cs" />
     <Compile Include="AzureTableAppender.cs" />
-    <Compile Include="AzureBlobAppender.cs" />
     <Compile Include="ElasticTableEntity.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\LoggingEventExtensions.cs" />
